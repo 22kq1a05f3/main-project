@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Table Booking</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("regpage.jpg.jpg");
+    background-position: center;
+    background-size: cover;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 8px;
+      color: #fff;
+      border: 1px solid white;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="date"],
+    input[type="time"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid pink;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="mb-4">Table Booking</h1>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" class="form-control" id="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Number of Guests</label>
+        <input type="number" class="form-control" id="guests" min="1" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" id="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" class="form-control" id="time" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+<script>
+    document.getElementById('bookingForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var guests = document.getElementById('guests').value;
+      var date = document.getElementById('date').value;
+      var time = document.getElementById('time').value;
+      var message = "Thank you, " + name + "! Your table for " + guests + " guests on " + date + " at " + time + " has been booked successfully.";
+      alert(message);
+     window.location.href="home.html";
+      document.getElementById('bookingForm').reset();
+    });
+  </script>
+</body>
+</html>

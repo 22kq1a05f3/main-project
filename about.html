@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <title>Rachel Restaurant</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: 'Roboto', sans-serif;
+            }
+            .box video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+            .heading{
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                margin: 20px auto;
+
+            }
+            .heading h2{
+                font-size: 30px;
+                color: white;
+                margin-bottom: 20px;
+                position: relative;
+            }
+            .heading h2::after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                display: block;
+                margin: 0 auto;
+                background-color: rgb(255, 196, 0);
+            }
+            .heading p{
+                font-size: 15px;
+                color: white;
+                margin-bottom: 35px;
+                text-shadow: 1px 2px 3px black;
+            }
+            .container{
+                width: 90%;
+                margin: 0 auto;
+                padding: 10px 20px;
+            }
+            .about{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .about-image{
+                flex: 1;
+                margin-bottom: 80px;
+                overflow: hidden;
+            }
+            .about-image img{
+                max-width: 95%;
+                height: auto;
+                display: block;
+    
+            }
+            .about-content{
+                flex: 3;
+            }
+            .about-content h2{
+                font-size: 23px;
+                margin-bottom: 15px;
+                color: white;
+            }
+            .about-content p{
+                font-size: 14px;
+                line-height: 1.5;
+                color: white;
+                text-shadow: 1px 2px 3px black;
+            }
+            .about-content .read-more{
+                display: inline-block;
+                padding: 10px 20px;
+                background-color: blue;
+                color: white;
+                font-size: 19px;
+                text-decoration: none;
+                border-radius: 25px;
+                margin-top: 15px;
+            }
+            .about-content .read-more:hover{
+                background-color: burlywood;
+                color: black;
+            }
+            @media screen and (max-width: 768px){
+                .heading{
+                    padding: 0px 20px;
+                }
+                .heading h2{
+                    font-size: 30px;
+                }
+                .heading p{
+                    font-size: 17px;
+                    margin-bottom: 0px;
+                }
+                .container{
+                    padding: 0px;
+                }
+                .about{
+                    padding: 20px;
+                    flex-direction: column;
+                }
+                .about-image{
+                    margin-right: 0px;
+                    margin-bottom: 20px;
+                }
+                .about-content p{
+                    padding: 0px;
+                    font-size: 16px;
+                }
+                .about-content .read-more{
+                    font-size: 15px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <video src="E:\project2\Restaurant Ad Video Template (Editable).mp4" autoplay muted loop></video>
+        </div>
+        <div class="heading">
+            <h2 align="center">Rachel Restaurant</h2>
+        
+        <p>Welcome to Rachel, here you can enjoy our delicious food items with your loved ones :-)
+            </p></div>
+            <div class="container">
+                <section class="about">
+                    <div class="about-image">
+                        <img src="img1.jpg.jpg">
+                    </div>
+                    <div class="about-content">
+                        <h2>Cool Food for Cool People</h2>
+                        <p> where culinary passion meets exceptional dining experience. Nestled in the heart of ongole, our restaurant offers a delightful fusion of flavors, ambiance, and hospitality. Step into our inviting space 
+                            and embark on a gastronomic journey curated to tantalize your taste buds and awaken your senses.<br>
+                            Indulge in a diverse menu crafted with the finest ingredients, sourced locally and internationally, ensuring each dish is a masterpiece of taste and presentation. Whether you're craving classic comfort food or adventurous culinary creations, our chefs ere culinary passion meets exceptional dining experience. Nestled in the heart of Ongole, our restaurant offers a delightful fusion of flavors, ambiance, and hospitality. Step into our inviting space and embark on a gastronomic journey curated to tantalize your taste buds and awaken your senses.
+                            expertly blend tradition with innovation to deliver culinary delights that will leave you craving for more.<br>
+                            Our warm and attentive staff are dedicated to providing you with unparalleled service, ensuring every visit is memorable and enjoyable.<br> Whether you're celebrating a special occasion, enjoying a casual meal with friends, or hosting a corporate event, our restaurant provides the perfect setting for any occasion.<br>
+                            Experience the perfect harmony of flavors, ambiance, and service at Rachel.<br>
+                             We invite you to savor the moment and create lasting memories with us. Come join us and discover why we're not just a restaurant, but a culinary destination.
+                            </p>
+                        <a href="" class="read-more">Read More</a>
+                    </div>
+                </section>
+            </div>
+    </body>
+</html>

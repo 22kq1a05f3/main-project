@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Rachel Restaurant</title>
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            body{
+                background: whitesmoke;
+                font-family: 'poppins', sans-serif;
+            }
+            .menu{
+                padding: 0px 5px 10px 5px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(350px,2fr));
+                grid-gap:20px 40px
+            }
+            .heading{
+                background: orange;
+                color: black;
+                margin-bottom: 30px;
+                padding: 30px 0;
+                grid-column: 1/-1;
+                text-align: center;
+            }
+            .heading>h2{
+                font-weight: 400;
+                font-size: 32px;
+                letter-spacing: 10px;
+                text-transform: uppercase;
+            }
+            .heading>h3{
+                font-weight: 600;
+                font-size: 22px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
+            .food-items{
+                display: grid;
+                position: relative;
+                grid-template-rows: auto 2fr;
+                border-radius: 15px;
+                box-shadow: 0 0 15px black;
+                transition: .2s ease-in-out; 
+            }
+            .food-items img{
+                position: relative;
+                width: 100%;
+                height: 280px;
+                border-radius: 15px 15px 0 0 ;
+                cursor: pointer;
+            }
+            h2{
+                grid-column: 1/-1;
+                text-align: center;
+            }
+            .details{
+                padding: 20px 10px;
+                display: grid;
+                grid-template-rows: auto 2fr 50px;
+                grid-row-gap: 15px 15px;
+            }
+            .details-sub{
+                display: grid;
+                grid-template-columns: auto auto;
+            }
+            .details-sub>h5{
+                font-weight: 600;
+                font-size: 18px;
+            }
+            .price{
+                text-align: right;
+            }
+            .details>p{
+                color: #6f6f6f;
+                font-size: 15px;
+                align-self: stretch;
+                font-weight: 400;
+                line-height: 28px;
+            }
+            .details>button{
+                background: orange;
+                border: none;
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                border-radius: 5px;
+                width: 178px;
+                cursor: pointer;
+            }
+            .details>button:hover{
+                background: orangered;
+            }
+            button a{
+                color: white;
+                text-decoration: none;
+            }
+                </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="heading">
+                <h2>Rachel Restaurant</h2>
+                <h3>&mdash;Menu Items&mdash;</h3>
+            </div>
+            <div class="food-items">
+                <img src="Pasta Fagioli al Forno-italian.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Pasta Fagioli al Forno</h5>
+                        <h5 class="price">$57</h5>
+                    </div>
+                    <p>The term al forno means “baked pasta with beans.” But my family translates it as “super satisfying dinner.”</p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Sausage Lasagna-italian.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Sausage Lasagna</h5>
+                        <h5 class="price">$122</h5>
+                    </div>
+                    <p>Sausage Lasagna is a delicious and hearty Italian dish that combines layers of lasagna noodles and melted mozzarella cheese.</p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Blushing Penne Pasta-italian.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Blushing Penne Pasta</h5>
+                        <h5 class="price">$45</h5>
+                    </div>
+                    <p>Blushing Penne Pasta is a delightful Italian-inspired dish featuring penne pasta tossed in a creamy tomato sauce with a hint of pink hue.</p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Coq au Vin-french.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Coq au Vin</h5>
+                        <h5 class="price">$50</h5>
+                    </div>
+                    <p>Coq au Vin is a classic French dish that translates to "rooster in wine."</p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Escargot-french.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Escargot</h5>
+                        <h5 class="price">$90</h5>
+                    </div>
+                    <p>Escargot, a French delicacy, consists of cooked land snails typically served as an appetizer.</p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Crème Brûlée -french.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Crème Brûlée</h5>
+                        <h5 class="price">$70</h5>
+                    </div>
+                    <p>Crème Brûlée, a classic French dessert, is renowned for its luxurious combination of creamy custard and crisp caramelized sugar crust.</p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="biriyani.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Biriyani</h5>
+                        <h5 class="price">$57</h5>
+                    </div>
+                    <p>Biryani is a fragrant and flavorful rice dish that originated in the Indian subcontinent, but it's enjoyed across various regions and has many different variations. </p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Saag Paneer-indian.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Saag Paneer</h5>
+                        <h5 class="price">$57</h5>
+                    </div>
+                    <p>Saag Paneer is a beloved vegetarian dish originating from North India, consisting of paneer (a type of Indian cheese) cooked in a creamy spinach-based sauce.</p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+            <div class="food-items">
+                <img src="Chicken Tikka Masala-indian.jpg">
+                <div class="details">
+                    <div class="details-sub">
+                        <h5>Chicken Tikka Masala </h5>
+                        <h5 class="price">$30</h5>
+                    </div>
+                    <p>Chicken Tikka Masala is a popular and flavorful dish that originates from Indian cuisine but has gained worldwide popularity. </p>
+                    <button><a href="#">Order Now</a></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
